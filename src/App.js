@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Component from "./Header.jsx";
+import StateProps from "./stateProps.jsx";
+import StreamingComponent  from "./StreamingComponent.jsx"
+import CountComponent  from "./CountComponent.jsx"
+// import SuspenseComponent  from "./component/SuspenseComponent.jsx"
+import GraphqlComponent  from "./component/GraphqlComponent.jsx"
 
-function App() {
+// const Navbar = () => {
+//   return(
+//     <div>test</div>
+//   )
+// }
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex py-14 flex-col items-center min-h-screen w-full">
+      {/* <StreamingComponent/> */}
+        {/* <Component/>
+        <StateProps/> */}
+        <GraphqlComponent/>
     </div>
   );
 }
 
-export default App;
+export default App
+
